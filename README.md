@@ -186,8 +186,12 @@ pip install -r requirements.txt
 python zillow_pipedrive_ui.py
 
 ![Main Dashboard](docs/images/dashboard.png)
+![Main Dashboard](docs/images/dashboard.png)
+![Main Dashboard](docs/images/dashboard.png)
+![Main Dashboard](docs/images/dashboard.png)
 
 ```md
+
 
 
 
