@@ -93,7 +93,7 @@ The main dashboard provides a centralized view of the system, allowing users to:
 - Monitor system status
 - Access logs and execution feedback
 
-📸 **Add image: Main Dashboard**
+![Main Dashboard](docs/Images/dashboard.png)
 
 
 ---
@@ -113,6 +113,7 @@ This system is built as a **complete production automation platform**, covering 
 - Includes retry logic, timeout handling, and stealth proxy support
 - URL-driven scraping allows easy updates without changing source code
 
+![Main Dashboard](docs/Images/scraper.png)
 ---
 
 ### 🧠 Intelligent Agent Data Extraction
@@ -133,6 +134,7 @@ This system is built as a **complete production automation platform**, covering 
 - Enables long-term tracking of processed listings
 
 ---
+![Main Dashboard](docs/Images/CSV.png)
 
 ### 🔄 Pipedrive CRM Integration
 
@@ -145,6 +147,7 @@ This system is built as a **complete production automation platform**, covering 
 - Protects against duplicate deal creation
 
 ---
+![Main Dashboard](docs/Images/Sync_with_CRM.png)
 
 ### 🖥️ Desktop Application Controls
 
@@ -185,12 +188,8 @@ urls_file = scraping_urls.txt
 pip install -r requirements.txt
 python zillow_pipedrive_ui.py
 
-![Main Dashboard](docs/Images/dashboard.png)
-![Main Dashboard](docs/Images/CSV.png)
-![Main Dashboard](docs/Images/scraper.png)
-![Main Dashboard](docs/Images/Sync_with_CRM.png)
-
 ```md
+
 
 
 
