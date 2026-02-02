@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual / build
+build/
+dist/
+
+# Databases & data
+*.db
+*.csv
+data/
+data/**
+
+# Config & secrets
+config.ini
+config/credentials.json
+config/settings.json
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Archives & executables
+*.exe
+*.zip
+
+# Documents
+*.docx

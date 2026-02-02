@@ -1,0 +1,190 @@
+{
+  "101": {
+    "name": "Lead In",
+    "table": "lead_in"
+  },
+  "109": {
+    "name": "No Response",
+    "table": "no_response"
+  },
+  "134": {
+    "name": "Verbal Follow Up",
+    "table": "verbal_follow_up"
+  },
+  "104": {
+    "name": "Contract Follow up",
+    "table": "contract_follow_up"
+  },
+  "111": {
+    "name": "30 Day Follow Up",
+    "table": "day_30_follow_up"
+  },
+  "113": {
+    "name": "60 Day Follow Up",
+    "table": "day_60_follow_up"
+  },
+  "112": {
+    "name": "90 Day Follow Up",
+    "table": "day_90_follow_up"
+  },
+  "114": {
+    "name": "Pending",
+    "table": "pending"
+  },
+  "105": {
+    "name": "Expired Listing",
+    "table": "expired_listing"
+  },
+  "133": {
+    "name": "Dead Deal",
+    "table": "dead_deal"
+  },
+  "118": {
+    "name": "Lead In",
+    "table": "lead_in"
+  },
+  "119": {
+    "name": "Contact Attempted",
+    "table": "lead_in"
+  },
+  "120": {
+    "name": "No Response",
+    "table": "no_response"
+  },
+  "121": {
+    "name": "Responded",
+    "table": "responded"
+  },
+  "122": {
+    "name": "14 Day Follow Up",
+    "table": "lead_in"
+  },
+  "123": {
+    "name": "30 Day Follow Up",
+    "table": "day_30_follow_up"
+  },
+  "124": {
+    "name": "60 Day Follow Up",
+    "table": "day_60_follow_up"
+  },
+  "125": {
+    "name": "90 Day Follow Up",
+    "table": "day_90_follow_up"
+  },
+  "126": {
+    "name": "Negotiation CA or CR",
+    "table": "lead_in"
+  },
+  "127": {
+    "name": "Pending",
+    "table": "pending"
+  },
+  "128": {
+    "name": "Contract Sent",
+    "table": "contract_follow_up"
+  },
+  "129": {
+    "name": "Contract Signed",
+    "table": "contract_follow_up"
+  },
+  "130": {
+    "name": "Closed",
+    "table": "dead_deal"
+  },
+  "41": {
+    "name": "Deal In",
+    "table": "lead_in"
+  },
+  "44": {
+    "name": "Need Photos",
+    "table": "lead_in"
+  },
+  "14": {
+    "name": "Needs Marketing",
+    "table": "lead_in"
+  },
+  "69": {
+    "name": "Needs Hedge Fund",
+    "table": "lead_in"
+  },
+  "15": {
+    "name": "Needs Buyer",
+    "table": "lead_in"
+  },
+  "43": {
+    "name": "Needs MLS",
+    "table": "lead_in"
+  },
+  "42": {
+    "name": "Needs Short Sale",
+    "table": "lead_in"
+  },
+  "50": {
+    "name": "Needs Probate",
+    "table": "lead_in"
+  },
+  "45": {
+    "name": "Needs Memo",
+    "table": "lead_in"
+  },
+  "16": {
+    "name": "Contract Sent",
+    "table": "contract_follow_up"
+  },
+  "17": {
+    "name": "Under Contract to Sell",
+    "table": "contract_follow_up"
+  },
+  "18": {
+    "name": "Dead Deal",
+    "table": "dead_deal"
+  },
+  "153": {
+    "name": "192 Varney Mills Rd. Windham, ME 04062",
+    "table": "lead_in"
+  },
+  "150": {
+    "name": " 2786 Shell Bark Rd, Decatur, GA 30035",
+    "table": "day_30_follow_up"
+  },
+  "6": {
+    "name": "Lead In",
+    "table": "lead_in"
+  },
+  "28": {
+    "name": "Contact Attempted",
+    "table": "lead_in"
+  },
+  "29": {
+    "name": "Needs Follow Up",
+    "table": "lead_in"
+  },
+  "40": {
+    "name": "Negotiation",
+    "table": "lead_in"
+  },
+  "9": {
+    "name": "Contract Sent",
+    "table": "contract_follow_up"
+  },
+  "11": {
+    "name": "Contract Signed",
+    "table": "contract_follow_up"
+  },
+  "47": {
+    "name": "Needs Refund",
+    "table": "lead_in"
+  },
+  "49": {
+    "name": "Refund Approved",
+    "table": "lead_in"
+  },
+  "48": {
+    "name": "Refund Declined",
+    "table": "lead_in"
+  },
+  "46": {
+    "name": "Dead Deal",
+    "table": "dead_deal"
+  }
+}

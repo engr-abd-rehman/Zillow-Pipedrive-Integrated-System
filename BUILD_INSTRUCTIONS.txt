@@ -1,0 +1,185 @@
+═══════════════════════════════════════════════════════════════════════════════
+    ZILLOW PIPEDRIVE SYSTEM - EXE BUILD INSTRUCTIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+📦 HOW TO CREATE STANDALONE EXE FILE
+────────────────────────────────────────────────────────────────────────────────
+
+STEP 1: INSTALL PYINSTALLER
+────────────────────────────────────────────────────────────────────────────────
+Open Command Prompt (cmd) and run:
+
+    pip install pyinstaller
+
+
+STEP 2: BUILD THE EXE FILE
+────────────────────────────────────────────────────────────────────────────────
+Navigate to your project folder:
+
+    cd "f:\Clients\Terry Royer\Terry New Zillow System"
+
+Run PyInstaller command:
+
+    pyinstaller --onefile --windowed --name "ZillowPipedriveSystem" --add-data "config.ini;." --add-data "scraping_urls.txt;." zillow_pipedrive_ui.py
+
+Wait for build to complete (2-5 minutes)
+
+
+STEP 3: LOCATE THE EXE FILE
+────────────────────────────────────────────────────────────────────────────────
+After build completes, the EXE will be in:
+
+    dist\ZillowPipedriveSystem.exe
+
+File size: ~50-100 MB
+
+
+STEP 4: CREATE DEPLOYMENT FOLDER
+────────────────────────────────────────────────────────────────────────────────
+Create a new folder for client delivery:
+
+    ZillowSystem_v1.0\
+    ├── ZillowPipedriveSystem.exe        ← Copy from dist\
+    ├── config.ini                       ← Copy from project root
+    ├── scraping_urls.txt                ← Copy from project root
+    ├── data\                            ← Create empty folder
+    └── README.txt                       ← Copy from project root
+
+
+STEP 5: PACKAGE FOR CLIENT
+────────────────────────────────────────────────────────────────────────────────
+1. Right-click "ZillowSystem_v1.0" folder
+2. Send to → Compressed (zipped) folder
+3. Result: ZillowSystem_v1.0.zip (~50-100 MB)
+4. Send to client via email or Google Drive
+
+
+═══════════════════════════════════════════════════════════════════════════════
+    DETAILED PYINSTALLER FLAGS EXPLANATION
+═══════════════════════════════════════════════════════════════════════════════
+
+--onefile
+    Creates a single executable file (not a folder with dependencies)
+    Result: One .exe file that contains everything
+
+--windowed
+    No console window appears (GUI only)
+    For debugging, remove this flag to see console output
+
+--name "ZillowPipedriveSystem"
+    Custom name for the executable
+    Default would be "zillow_pipedrive_ui.exe"
+
+--add-data "config.ini;."
+    Includes config.ini file in the EXE
+    Format: "source;destination"
+    The "." means root of EXE
+
+--add-data "scraping_urls.txt;."
+    Includes scraping_urls.txt file in the EXE
+
+
+═══════════════════════════════════════════════════════════════════════════════
+    ALTERNATIVE: USING AUTO-PY-TO-EXE (GUI METHOD)
+═══════════════════════════════════════════════════════════════════════════════
+
+STEP 1: Install auto-py-to-exe
+    pip install auto-py-to-exe
+
+STEP 2: Launch GUI
+    auto-py-to-exe
+
+STEP 3: Configure in GUI
+    - Script Location: zillow_pipedrive_ui.py
+    - Onefile: One File
+    - Console Window: Window Based (hide the console)
+    - Additional Files:
+        * Add config.ini
+        * Add scraping_urls.txt
+    - Advanced → Output Directory: dist
+
+STEP 4: Click "CONVERT .PY TO .EXE"
+
+STEP 5: Find EXE in dist\ folder
+
+
+═══════════════════════════════════════════════════════════════════════════════
+    TESTING THE EXE
+═══════════════════════════════════════════════════════════════════════════════
+
+Before sending to client, TEST the EXE:
+
+1. Copy the deployment folder to a different location (e.g., Desktop)
+2. Double-click ZillowPipedriveSystem.exe
+3. Check:
+   ✅ Application launches without errors
+   ✅ Config.ini is loaded (check console for "✅ Loaded configuration")
+   ✅ Database auto-creates in data\ folder
+   ✅ Scraper tab works
+   ✅ Can scrape properties
+   ✅ CSV file auto-creates
+
+4. If any errors, check:
+   - config.ini is in same folder as EXE
+   - scraping_urls.txt is in same folder as EXE
+   - data\ folder exists
+
+
+═══════════════════════════════════════════════════════════════════════════════
+    TROUBLESHOOTING BUILD ERRORS
+═══════════════════════════════════════════════════════════════════════════════
+
+Error: "ModuleNotFoundError: No module named 'PyQt5'"
+Solution: pip install PyQt5
+
+Error: "ModuleNotFoundError: No module named 'requests'"
+Solution: pip install requests
+
+Error: "ModuleNotFoundError: No module named 'beautifulsoup4'"
+Solution: pip install beautifulsoup4
+
+Error: "Unable to find 'config.ini'"
+Solution: Make sure --add-data flag includes config.ini
+
+Error: "EXE is too large (>200 MB)"
+Solution: Normal for PyQt5 apps. 50-150 MB is expected.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+    UPDATING THE EXE (FOR FUTURE VERSIONS)
+═══════════════════════════════════════════════════════════════════════════════
+
+When you make code changes:
+
+1. Update version number in code (optional)
+2. Run PyInstaller command again
+3. Create new deployment folder: ZillowSystem_v1.1\
+4. Copy new EXE from dist\
+5. Include updated config.ini and README.txt
+6. Zip and send to client
+
+Client can:
+- Replace old EXE with new EXE
+- Keep existing config.ini (with their API keys)
+- Keep existing data\ folder (with their database)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+    FINAL CHECKLIST BEFORE SENDING TO CLIENT
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ ZillowPipedriveSystem.exe is in folder
+✅ config.ini is in folder (with correct API keys)
+✅ scraping_urls.txt is in folder (with valid URLs)
+✅ data\ folder exists (empty is OK)
+✅ README.txt is in folder
+✅ Tested EXE on a clean machine (or different folder)
+✅ All features work (scraper, database, CSV, Pipedrive sync)
+✅ Zipped the folder
+✅ File size is reasonable (<150 MB)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+Version 1.0 | Last Updated: 2026-02-01
+═══════════════════════════════════════════════════════════════════════════════
+
