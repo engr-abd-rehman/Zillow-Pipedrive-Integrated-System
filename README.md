@@ -185,12 +185,13 @@ urls_file = scraping_urls.txt
 pip install -r requirements.txt
 python zillow_pipedrive_ui.py
 
-![Main Dashboard](docs/images/dashboard.png)
-![Main Dashboard](docs/images/CSV.png)
-![Main Dashboard](docs/images/scraper.png)
-![Main Dashboard](docs/images/Sync_with_CRM.png)
+![Main Dashboard](docs/Images/dashboard.png)
+![Main Dashboard](docs/Images/CSV.png)
+![Main Dashboard](docs/Images/scraper.png)
+![Main Dashboard](docs/Images/Sync_with_CRM.png)
 
 ```md
+
 
 
 
