@@ -94,7 +94,6 @@ The main dashboard provides a centralized view of the system, allowing users to:
 - Access logs and execution feedback
 
 📸 **Add image: Main Dashboard**
-```md
 
 
 ---
@@ -190,5 +189,7 @@ pip install -r requirements.txt
 python zillow_pipedrive_ui.py
 
 ![Main Dashboard](docs/images/dashboard.png)
+
+```md
 
 
