@@ -161,9 +161,7 @@ This system is built as a **complete production automation platform**, covering 
 The system follows **secure configuration practices**.
 
 ### 🔐 Configuration File Setup
-
 Create a local configuration file by copying:
-
 ```text
 config.example.ini → config.ini
 
@@ -191,5 +189,6 @@ python zillow_pipedrive_ui.py
 ![Main Dashboard](docs/images/dashboard.png)
 
 ```md
+
 
 
